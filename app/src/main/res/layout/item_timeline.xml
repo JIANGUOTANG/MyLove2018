@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <com.github.vipulasri.timelineview.TimelineView
+            android:id="@+id/time_marker"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:line="@color/colorPrimary"
+            app:lineSize="3dp"
+
+            app:markerSize="20dp" />
+
+        <com.ramotion.foldingcell.FoldingCell
+            android:id="@+id/folding_cell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <include
+                layout="@layout/content_item_detail"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/cell_title_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@android:color/holo_blue_dark">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:text="我们在一起已经"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/tvDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:text="1270"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp"
+                    android:background="@color/colorBgDay"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="天"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </com.ramotion.foldingcell.FoldingCell>
+    </LinearLayout>
+
+</LinearLayout>
