@@ -3,4 +3,13 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="fa_pencil_square_o">{fa-pencil-square-o}</string>
+    <string name="input_memorial">输入纪念日内容</string>
+    <string name="fa_calendar">{fa-calendar}</string>
+    <string name="choice_date">请选择日期</string>
+    <string name="fa_file_image_o">{fa-file-image-o}</string>
+    <string name="fa_angle_right">{fa-angle-right}</string>
+    <string name="fa_bell">{fa-bell}</string>
+    <string name="behavior_footer">com.mylove2018.view.MyFabBehavior</string>
+    <string name="fa_trash">{fa-trash}</string>
 </resources>

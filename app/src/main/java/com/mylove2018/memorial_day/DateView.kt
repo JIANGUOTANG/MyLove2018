@@ -5,6 +5,5 @@ package com.mylove2018.memorial_day
  */
 interface DateView {
     fun addSucceed(state: Int)
-    fun showReflesh()
-    fun hideReflesh()
+    fun loadDate(list: List<NewDateInfo>)
 }

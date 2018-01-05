@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <View xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+
+        android:background="@color/colorIconBlack" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/iconText"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:shadowColor="#22000000"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="1"
+            android:text="@string/fa_pencil_square_o"
+            android:textColor="@color/colorIconBlack"
+            android:textSize="26sp" />
+
+        <EditText
+            android:id="@+id/edtDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:hint="@string/input_memorial"
+            android:paddingLeft="8dp"
+            android:textSize="16sp"
+            tools:ignore="TextFields" />
+
+    </LinearLayout>
+
+    <include layout="@layout/horizontal_line" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <com.joanzapata.iconify.widget.IconTextView
+
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:shadowColor="#22000000"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="1"
+            android:text="@string/fa_calendar"
+            android:textColor="@color/colorIconBlack"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="8dp"
+            android:text="2018-01-03"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <include layout="@layout/horizontal_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:shadowColor="#22000000"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="1"
+            android:text="@string/fa_bell"
+            android:textColor="@color/colorIconBlack"
+            android:textSize="26sp" />
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="8dp"
+            android:paddingStart="8dp"
+            android:text="开启提醒"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <include layout="@layout/horizontal_line" />
+
+    <LinearLayout
+        android:id="@+id/linerLayoutBg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+        <com.joanzapata.iconify.widget.IconTextView
+
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:shadowColor="#22000000"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="1"
+            android:text="@string/fa_file_image_o"
+            android:textColor="@color/colorIconBlack"
+            android:textSize="26sp" />
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="8dp"
+            android:paddingStart="8dp"
+            android:text="背景"
+
+            android:textSize="16sp" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/imgBg"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_marginRight="8dp"
+            app:srcCompat="@color/colorAccent" />
+
+        <include layout="@layout/layout_angle_right" />
+    </LinearLayout>
+
+    <include layout="@layout/horizontal_line" />
+
+</LinearLayout>
