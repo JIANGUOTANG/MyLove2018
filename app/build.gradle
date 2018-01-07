@@ -1,6 +1,9 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
-apply plugin: 'org.greenrobot.greendao' // apply plugin
+apply plugin: 'kotlin-kapt'
+apply plugin: 'org.greenrobot.greendao'
+apply plugin: 'kotlin-android-extensions'
+// apply plugin
 android {
     compileSdkVersion ANDROID_COMPLILE_SDK_VERSION as int
     defaultConfig {
@@ -43,7 +46,8 @@ dependencies {
     compile 'com.joanzapata.iconify:android-iconify-fontawesome:2.2.2' // (v4.5)
     //dialog
     implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
-
+     //图片加载
+    compile 'com.squareup.picasso:picasso:2.5.2'
     //dialog
     compile 'com.github.sd6352051:NiftyDialogEffects:v1.0.2'
     compile 'com.google.code.gson:gson:2.8.2'
@@ -51,6 +55,8 @@ dependencies {
     compile 'com.github.LuckSiege.PictureSelector:picture_library:v2.1.7'
     compile 'org.greenrobot:greendao:3.2.2' // add library
     compile 'com.blankj:utilcode:1.10.0'
+    kapt 'com.github.bumptech.glide:glide:4.5.0'
+
 
 }
 

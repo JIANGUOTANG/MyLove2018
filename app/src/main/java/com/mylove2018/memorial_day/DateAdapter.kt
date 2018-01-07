@@ -87,7 +87,7 @@ class DateAdapter() : RecyclerView.Adapter<DateAdapter.MyViewHoder>(), Parcelabl
 
 
         if (!dateInfo.imageUrl.equals("")) {
-            Glide.with(context).load(dateInfo.imageUrl).into(holder.imgView)
+            Glide.with(context!!).load(dateInfo.imageUrl).into(holder.imgView!!)
         }
     }
 

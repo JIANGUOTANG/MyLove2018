@@ -98,10 +98,10 @@ class DateActivity : AppCompatActivity(), CalendarSelector.ICalendarSelectorCall
         dateInfo!!.date = date
     }
 
-    var dateInfo: NewDateInfo? = NewDateInfo()
-    var tvDate: TextView? = null
-    var date: String? = null//日期
-    var imagBg: AppCompatImageView? = null
+    private var dateInfo: NewDateInfo? = NewDateInfo()
+    private var tvDate: TextView? = null
+    private var date: String? = null//日期
+    private var imagBg: AppCompatImageView? = null
     private fun showDialog() {
         val inflater = layoutInflater
         var title: String? = null//纪念日内容
@@ -163,7 +163,7 @@ class DateActivity : AppCompatActivity(), CalendarSelector.ICalendarSelectorCall
                         path = selectList[0].compressPath
                         val item = selectList[0]
                         //预览图
-                        Glide.with(this@DateActivity).load(path).into(imagBg)
+                        Glide.with(this@DateActivity).load(path).into(this!!.imagBg!!)
                     }
                 }
             }

@@ -12,4 +12,5 @@
     <string name="fa_bell">{fa-bell}</string>
     <string name="behavior_footer">com.mylove2018.view.MyFabBehavior</string>
     <string name="fa_trash">{fa-trash}</string>
+    <string name="fa_camera_retro">{fa-camera-retro}</string>
 </resources>
